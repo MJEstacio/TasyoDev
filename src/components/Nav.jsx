@@ -8,7 +8,7 @@ import { useState } from 'react';
 const Nav = ({ handleclick }) => {
   const [nav, setNav] = useState(false);
   return (
-    <div className='fixed top-0 left-0 w-screen overflow-x-hidden bg-white/80 z-50 px-2'>
+    <div className='fixed top-0 left-0 w-screen overflow-x-hidden bg-white/80 z-50 px-2 dark:bg-slate-900/90 duration-500'>
       <nav className='max-w-[1440px] mx-auto py-2 flex items-center justify-between'>
         <div className='logo flex items-center gap-2'>
           <img
