@@ -2,9 +2,8 @@ import React from 'react';
 import MJLogo from '../assets/mjelogo.jpg';
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { RiFilePaper2Line } from 'react-icons/ri';
-import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import resume from '../mjestacioiii.pdf';
 import { useState } from 'react';
-import { AiOutlineClose } from 'react-icons/ai';
 
 const Nav = ({ handleclick }) => {
   const [nav, setNav] = useState(false);
@@ -31,7 +30,8 @@ const Nav = ({ handleclick }) => {
           </li>
           <li>
             <a
-              href='#'
+              href={resume}
+              target='_blank'
               className='flex items-center gap-1 bg-gradient-to-r from-sky-500 to-sky-400 px-4 py-2 rounded-xl text-white font-semibold '
             >
               <RiFilePaper2Line />
