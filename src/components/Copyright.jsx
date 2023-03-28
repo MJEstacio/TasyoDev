@@ -2,8 +2,8 @@ import React from 'react';
 import phflag from '../assets/phflag.png';
 const Copyright = () => {
   return (
-    <div className='flex py-5 justify-center items-center'>
-      <span className='text-sky-500 font-semibold flex'>
+    <div className='flex  py-5 justify-center items-center'>
+      <span className='text-sky-500 font-semibold flex flex-col md:flex-row  items-center justify-center'>
         Made from the
         <span>
           <img
