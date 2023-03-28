@@ -11,7 +11,7 @@ const Copyright = () => {
             alt='flag'
             className='w-10 mx-2'
           />
-        </span>{' '}
+        </span>
         Philippines with 💖 by TasyoDev!
       </span>
     </div>
