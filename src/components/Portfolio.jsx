@@ -14,34 +14,42 @@ const Portfolio = () => {
     {
       title: 'Kati Souza Ministries',
       image: katie,
+      link: 'https://katiesouza.com/',
     },
     {
       title: 'Onetrace',
       image: onetrace,
+      link: 'https://onetrace.com/',
     },
     {
       title: 'Refers @ SMDC',
       image: smdc,
+      link: 'https://refer.smdc.com/',
     },
     {
       title: 'Circle M Meats',
       image: meats,
+      link: 'https://circlemmeats.wpengine.com/',
     },
     {
       title: 'Norms Farms',
       image: norms,
+      link: 'https://normsfarms.com/',
     },
     {
       title: 'Concepstore',
       image: concep,
+      link: 'https://concepstore.com/',
     },
     {
       title: 'Dragonfly Saas',
       image: dragonfly,
+      link: 'https://mjestacio-dragonflysaas.netlify.app/',
     },
     {
       title: 'The Firm Tech',
       image: firmtech,
+      link: 'https://mjestacio.github.io/The-Firmtech/',
     },
   ];
 
@@ -65,7 +73,7 @@ const Portfolio = () => {
                 alt={proj.title}
               />
               <a
-                href='https://katiesouza.com/'
+                href={proj.link}
                 target='_blank'
               >
                 <div className='overlay'>
