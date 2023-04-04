@@ -7,7 +7,6 @@ import {
 import {
   SiCss3,
   SiJavascript,
-  SiBootstrap,
   SiTailwindcss,
   SiReact,
   SiNextdotjs,
@@ -63,13 +62,6 @@ const Tech = () => {
           <span>TypeScript</span>
         </div>
 
-        <div className='flex flex-col items-center p-5 border border-2 rounded-md text-gray-800 dark:bg-white'>
-          <SiBootstrap
-            size={30}
-            className='text-purple-600'
-          />
-          <span>Bootstrap</span>
-        </div>
         <div className='flex flex-col items-center p-5 border border-2 rounded-md text-gray-800 dark:bg-white'>
           <SiTailwindcss
             size={30}

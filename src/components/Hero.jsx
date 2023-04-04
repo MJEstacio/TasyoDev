@@ -1,19 +1,20 @@
 import React from 'react';
 import {
   BsFacebook,
-  BsWhatsapp,
   BsLinkedin,
   BsGithub,
-  BsTelegram,
 } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import mjpic from '../assets/mjpic.png';
 
 const Hero = () => {
   return (
-    <div className='min-h-screen flex items-center justify-center'>
+    <div
+      className='min-h-screen flex items-center justify-center'
+      id='hero'
+    >
       <section className='text-center max-w-[1440px] mt-32'>
-        <h1 className='text-3xl font-semibold text-sky-500'>
+        <h1 className='text-3xl md:text-5xl font-semibold text-sky-500 mb-5'>
           Mark Joseph Estacio
         </h1>
         <h2 className='text-xl'>
