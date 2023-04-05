@@ -13,6 +13,10 @@ p {
   font-family: 'Montserrat', sans-serif;
 }
 
+input {
+  font-family: 'Montserrat', sans-serif;
+  @apply px-4 py-2;
+}
 .social-icons {
   @apply flex;
 }

@@ -9,7 +9,10 @@ import { AiOutlineClose } from 'react-icons/ai';
 import resume from '../mjestacioiii.pdf';
 import { useState } from 'react';
 
-const Nav = ({ handleclick }) => {
+const Nav = ({
+  handleclick,
+  openmodal,
+}) => {
   const [nav, setNav] = useState(false);
   return (
     <div className='fixed top-0 left-0 w-screen overflow-x-hidden bg-white/80 z-50 px-2 dark:bg-slate-900/90 duration-500'>
@@ -58,6 +61,14 @@ const Nav = ({ handleclick }) => {
             </a>
           </li>
           <li>
+            <a
+              className='hidden lg:flex font-semibold hover:text-sky-500 duration-300 cursor-pointer'
+              onClick={openmodal}
+            >
+              Let's Talk
+            </a>
+          </li>
+          <li>
             <BsFillMoonStarsFill
               size={25}
               onClick={handleclick}
@@ -85,6 +96,7 @@ const Nav = ({ handleclick }) => {
           </li>
         </ul>
       </nav>
+      {/* Mobile Menu */}
       <div
         className={
           !nav
@@ -119,6 +131,14 @@ const Nav = ({ handleclick }) => {
             <li className='duration-200 hover:text-slate-500 cursor-pointer'>
               <a href='#services'>
                 Services
+              </a>
+            </li>
+            <li>
+              <a
+                className='duration-200 hover:text-slate-500 cursor-pointer'
+                onClick={openmodal}
+              >
+                Let's Talk
               </a>
             </li>
             <li>
