@@ -8,6 +8,7 @@ import Portfolio from './components/Portfolio';
 import Services from './components/Services';
 import Tech from './components/Tech';
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 function App() {
   const [darkMode, setDarkMode] =
     useState(false);

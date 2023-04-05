@@ -15,6 +15,7 @@ import {
   SiTypescript,
 } from 'react-icons/si';
 import { IoLogoNodejs } from 'react-icons/io';
+
 const Tech = () => {
   return (
     <div

@@ -6,14 +6,15 @@ import {
 } from 'react-icons/bs';
 import { MdEmail } from 'react-icons/md';
 import mjpic from '../assets/mjpic.png';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
     <div
-      className='min-h-screen flex items-center justify-center'
+      className='min-h-screen flex items-center justify-center overflow-hidden'
       id='hero'
     >
-      <section className='text-center max-w-[1440px] mt-32'>
+      <motion.section className='text-center max-w-[1440px] mt-32'>
         <h1 className='text-3xl md:text-5xl font-semibold text-sky-500 mb-5'>
           Mark Joseph Estacio
         </h1>
@@ -70,13 +71,27 @@ const Hero = () => {
             />
           </a>
         </div>
-        <div className='w-[200px] h-[200px] bg-gradient-to-b from-sky-500 to-sky-100 flex mx-auto rounded-full overflow-hidden object-contain flex items-center justify-center my-10'>
+        <motion.div
+          initial={{
+            x: '-100vw',
+          }}
+          animate={{
+            x: 0,
+            rotate: 360,
+          }}
+          transition={{
+            type: 'spring',
+            duration: 5,
+            bounce: 0.5,
+          }}
+          className='w-[200px] h-[200px] bg-gradient-to-b from-sky-500 to-sky-100 flex mx-auto rounded-full overflow-hidden object-contain flex items-center justify-center my-10'
+        >
           <img
             src={mjpic}
             alt='mjpic'
           />
-        </div>
-      </section>
+        </motion.div>
+      </motion.section>
     </div>
   );
 };
