@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 import { AiOutlineClose } from 'react-icons/ai';
-const ContactForm = ({ hidemodal }) => {
+const ContactForm = ({ openmodal }) => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -34,9 +34,9 @@ const ContactForm = ({ hidemodal }) => {
           className='w-[300px] lg:w-[600px] bg-white flex flex-col p-5 rounded-md  border border-sky-500 border-2 shadow-sm shadow shadow-sky-500 relative'
         >
           <AiOutlineClose
-            onClick={hidemodal}
+            onClick={openmodal}
             size={35}
-            className='absolute top-5 right-5'
+            className='absolute top-5 right-5 cursor-pointer'
           />
           <span className='text-center font-semibold mt-5 text-2xl mb-5'>
             Let's{' '}
@@ -49,7 +49,7 @@ const ContactForm = ({ hidemodal }) => {
           <input
             type='text'
             name='user_name'
-            className='border'
+            className='border bg-gray-100'
             placeholder='Your Name'
             required
           />
@@ -57,21 +57,21 @@ const ContactForm = ({ hidemodal }) => {
           <input
             type='email'
             name='user_email'
-            className='border'
+            className='border bg-gray-100'
             placeholder='Your Email'
             required
           />
           <label>Message</label>
           <textarea
             name='message'
-            className='h-[200px] border p-2'
+            className='h-[200px] border p-2 bg-gray-100'
             placeholder='Your Message...'
             required
           ></textarea>
           <input
             type='submit'
             value='Send'
-            className='mt-5 border rounded-md bg-sky-400 text-white cursor-pointer duration-200 hover:bg-sky-500'
+            className='mt-5 border rounded-md bg-sky-400 text-white cursor-pointer duration-200 hover:bg-sky-500 font-semibold'
           />
         </form>
       </div>

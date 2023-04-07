@@ -1,4 +1,7 @@
-import React from 'react';
+import React, {
+  useEffect,
+  useRef,
+} from 'react';
 import figma from '../assets/figma.svg';
 import {
   FaHtml5,
@@ -17,8 +20,21 @@ import {
 import { IoLogoNodejs } from 'react-icons/io';
 
 const Tech = () => {
+  const myRef = useRef();
+
+  useEffect(() => {
+    const observer =
+      new IntersectionObserver(
+        (entries) => {
+          const entry = entries[0];
+          console.log('entry', entry);
+        },
+      );
+    observer.observe(myRef.current);
+  }, []);
   return (
     <div
+      ref={myRef}
       className='tech py-10'
       id='tech'
     >

@@ -35,7 +35,7 @@ function App() {
       <Copyright />
       {modalForm && (
         <ContactForm
-          hidemodal={() =>
+          openmodal={() =>
             setModalForm(!modalForm)
           }
         />

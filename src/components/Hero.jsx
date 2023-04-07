@@ -11,7 +11,7 @@ import { motion } from 'framer-motion';
 const Hero = () => {
   return (
     <div
-      className='min-h-screen flex items-center justify-center overflow-hidden'
+      className='min-h-[110vh] flex items-center justify-center overflow-hidden'
       id='hero'
     >
       <motion.section className='text-center max-w-[1440px] mt-32'>
@@ -21,7 +21,7 @@ const Hero = () => {
         <h2 className='text-xl'>
           Freelance Web Developer
         </h2>
-        <p className='py-5 px-10 '>
+        <p className='py-5 px-10 max-w-[800px]'>
           A passionate, organized, and
           detail-oriented Front-End
           Developer with extensive
