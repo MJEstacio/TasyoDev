@@ -32,7 +32,7 @@ const Hero = () => {
               className='text-sky-600 hover:text-sky-500 duration-500 cursor-pointer'
             />
           </a>
-          <a href='https://github.com/MJEstacio/MJEWebsite'>
+          <a href='https://github.com/MJEstacio'>
             <BsGithub
               size={30}
               className='text-black hover:text-sky-500 duration-500 cursor-pointer'

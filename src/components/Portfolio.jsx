@@ -61,13 +61,13 @@ const Portfolio = () => {
 
   return (
     <div
-      className=' relative  max-w-[1440px] mx-auto my-20  portfolio dark:text-black '
+      className=' relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black  '
       id='portfolio'>
       <span className='backtext '>Portfolio</span>
       <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0'>
         {portfolios.map((proj) => (
           <div
-            className='mt-20 rounded-xl portfolio-card hover:scale-110 duration-500'
+            className='mt-20 rounded-xl portfolio-card mx-5 md:mx-0 hover:scale-110 duration-500'
             key={proj.title}>
             <div className='relative img-container overflow-hidden rounded-t-xl'>
               <img src={proj.image} alt={proj.title} />
