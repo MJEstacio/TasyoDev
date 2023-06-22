@@ -11,7 +11,7 @@ const Nav = ({ handleclick, openmodal }) => {
   return (
     <div className='fixed top-0 left-0 w-screen overflow-x-hidden bg-white/80 z-50 px-5 dark:bg-slate-900/90 duration-500'>
       <nav className='max-w-[1440px] mx-auto py-2 flex items-center justify-between'>
-        <a href='/' className='logo flex items-center gap-2'>
+        <a href='https://mjestacio.github.io/TasyoDev/' className='logo flex items-center gap-2'>
           <img src={MJLogo} alt='mjlogo' className='w-14 rounded-full' />
           <span className='text-2xl font-semibold text-sky-500'>TasyoDev</span>
         </a>
