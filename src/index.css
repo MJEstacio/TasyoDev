@@ -7,14 +7,14 @@ body {
   scroll-behavior: smooth;
 }
 body {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
 }
 p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 input {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   @apply px-4 py-2;
 }
 .social-icons {
@@ -32,36 +32,30 @@ input {
   @apply my-5;
 }
 
-.portfolio-card:hover
-  .img-container
-  .overlay {
+.portfolio-card:hover .img-container .overlay {
   transform: translateY(0);
 }
 
-.portfolio-card:hover
-  .img-container
-  img {
+.portfolio-card:hover .img-container img {
   transform: scale(1.2);
   transition: 1000ms ease-in-out;
 }
 
-.portfolio-card
-  .img-container
-  .overlay {
+.portfolio-card .img-container .overlay {
   @apply absolute top-0 left-0  duration-300 w-full h-full flex justify-center items-center bg-slate-800/80 dark:bg-sky-500/90;
   transform: translateY(120%);
   overflow: hidden;
 }
 
 .tech {
-  @apply py-10 relative z-20;
+  @apply py-40 relative z-20;
 }
 
 .dark {
   @apply bg-slate-900 text-white duration-500 ease-in-out;
 }
 .tech::after {
-  content: '';
+  content: "";
   top: 0;
   left: 0;
   inset: 0;
