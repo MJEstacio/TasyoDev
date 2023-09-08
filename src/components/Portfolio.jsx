@@ -1,84 +1,92 @@
-import React from 'react';
-import katie from '../assets/katie2.jpg';
-import onetrace from '../assets/onetrace4.jpg';
-import smdc from '../assets/refersmdc4.jpg';
-import meats from '../assets/meats4.jpg';
-import norms from '../assets/norms.jpg';
-import concep from '../assets/concepstore3.jpg';
-import dragonfly from '../assets/dragonfly1.jpg';
-import firmtech from '../assets/thefirmtech1.jpg';
-import clickhost from '../assets/clickhost.jpg';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+import React from "react";
+import katie from "../assets/katie2.jpg";
+import onetrace from "../assets/onetrace4.jpg";
+import smdc from "../assets/refersmdc4.jpg";
+import meats from "../assets/meats4.jpg";
+import norms from "../assets/norms.jpg";
+import concep from "../assets/concepstore3.jpg";
+import dragonfly from "../assets/dragonfly1.jpg";
+import firmtech from "../assets/thefirmtech1.jpg";
+import clickhost from "../assets/clickhost.jpg";
+import tairi from "../assets/tairihome.png";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 const Portfolio = () => {
   const portfolios = [
     {
-      title: 'Clickhost Australia',
+      title: "Tairi.co",
+      image: tairi,
+      link: "https://tairi-cov2-dz93f.ondigitalocean.app/",
+    },
+    {
+      title: "Clickhost Australia",
       image: clickhost,
-      link: 'https://clickhost.com.au/',
+      link: "https://clickhost.com.au/",
     },
     {
-      title: 'Kati Souza Ministries',
+      title: "Kati Souza Ministries",
       image: katie,
-      link: 'https://katiesouza.com/',
+      link: "https://katiesouza.com/",
     },
     {
-      title: 'Onetrace',
+      title: "Onetrace",
       image: onetrace,
-      link: 'https://onetrace.com/',
+      link: "https://onetrace.com/",
     },
     {
-      title: 'Refers @ SMDC',
+      title: "Refers @ SMDC",
       image: smdc,
-      link: 'https://refer.smdc.com/',
+      link: "https://refer.smdc.com/",
     },
     {
-      title: 'Circle M Meats',
+      title: "Circle M Meats",
       image: meats,
-      link: 'https://circlemmeats.wpengine.com/',
+      link: "https://circlemmeats.wpengine.com/",
     },
     {
-      title: 'Norms Farms',
+      title: "Norms Farms",
       image: norms,
-      link: 'https://normsfarms.com/',
+      link: "https://normsfarms.com/",
     },
     {
-      title: 'Concepstore',
+      title: "Concepstore",
       image: concep,
-      link: 'https://concepstore.com/',
+      link: "https://concepstore.com/",
     },
     {
-      title: 'Dragonfly Saas',
+      title: "Dragonfly Saas",
       image: dragonfly,
-      link: 'https://mjestacio-dragonflysaas.netlify.app/',
+      link: "https://mjestacio-dragonflysaas.netlify.app/",
     },
     {
-      title: 'The Firm Tech',
+      title: "The Firm Tech",
       image: firmtech,
-      link: 'https://mjestacio.github.io/The-Firmtech/',
+      link: "https://mjestacio.github.io/The-Firmtech/",
     },
   ];
 
   return (
     <div
-      className=' relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black  '
-      id='portfolio'>
-      <span className='backtext '>Portfolio</span>
-      <div className='grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0'>
+      className=" relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black  "
+      id="portfolio"
+    >
+      <span className="backtext ">Portfolio</span>
+      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0">
         {portfolios.map((proj) => (
           <div
-            className='mt-20 rounded-xl portfolio-card mx-5 md:mx-0 hover:scale-110 duration-500'
-            key={proj.title}>
-            <div className='relative img-container overflow-hidden rounded-t-xl'>
+            className="mt-20 rounded-xl portfolio-card mx-5 md:mx-0 hover:scale-110 duration-500"
+            key={proj.title}
+          >
+            <div className="relative img-container overflow-hidden rounded-t-xl">
               <img src={proj.image} alt={proj.title} />
-              <a href={proj.link} target='_blank'>
-                <div className='overlay'>
-                  <FaExternalLinkAlt className='text-sky-200 text-4xl' />
+              <a href={proj.link} target="_blank">
+                <div className="overlay">
+                  <FaExternalLinkAlt className="text-sky-200 text-4xl" />
                 </div>
               </a>
             </div>
-            <div className='text-center bg-white z-10 border rounded-b-lg border-sky-500 py-3'>
-              <span className='font-semibold text-xl '>{proj.title}</span>
+            <div className="text-center bg-white z-10 border rounded-b-lg border-sky-500 py-3">
+              <span className="font-semibold text-xl ">{proj.title}</span>
             </div>
           </div>
         ))}
