@@ -16,7 +16,7 @@ const Portfolio = () => {
     {
       title: "Tairi.co",
       image: tairi,
-      link: "https://tairi-cov2-dz93f.ondigitalocean.app/",
+      link: "https://tairi.co/",
     },
     {
       title: "Clickhost Australia",
@@ -78,8 +78,14 @@ const Portfolio = () => {
             key={proj.title}
           >
             <div className="relative img-container overflow-hidden rounded-t-xl">
-              <img src={proj.image} alt={proj.title} />
-              <a href={proj.link} target="_blank">
+              <img
+                src={proj.image}
+                alt={proj.title}
+              />
+              <a
+                href={proj.link}
+                target="_blank"
+              >
                 <div className="overlay">
                   <FaExternalLinkAlt className="text-sky-200 text-4xl" />
                 </div>
