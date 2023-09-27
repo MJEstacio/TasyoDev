@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 
 import { FaHtml5, FaSass } from "react-icons/fa";
 import {
@@ -12,6 +12,8 @@ import {
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
 import { Reveal } from "./Reveal";
+import { animateContainer, item } from "./Animation";
+import { motion } from "framer-motion";
 
 const techStack = [
   {
@@ -124,19 +126,20 @@ const Tech = () => {
     >
       <Reveal>
         <h2 className="text-center text-3xl text-white font-semibold">Tech Stack/Frameworks</h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 px-2 py-10 max-w-[1440px] mx-auto gap-5 text">
+        <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6 px-2 py-10 max-w-[1440px] mx-auto gap-5 text">
           {techStack.map((techs) => {
             return (
-              <div
-                className="flex flex-col items-center p-5 border border-2 rounded-md text-gray-800 dark:bg-white"
+              <motion.div
+                className={`flex flex-col items-center p-5 border border-2 rounded-md text-gray-800 dark:bg-white ${item}`}
                 key={techs.stack}
+                variants={item}
               >
                 {techs.icon}
                 <span>{techs.stack}</span>
-              </div>
+              </motion.div>
             );
           })}
-        </div>
+        </motion.div>
       </Reveal>
     </div>
   );

@@ -11,6 +11,8 @@ import clickhost from "../assets/clickhost.jpg";
 import tairi from "../assets/tairihome.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Reveal } from "./Reveal";
+import { motion } from "framer-motion";
+import { animateContainer, item } from "./Animation";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -72,10 +74,13 @@ const Portfolio = () => {
     >
       <span className="backtext ">Portfolio</span>
 
-      <Reveal className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0">
+      <Reveal
+        className={`grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden  pt-20 px-2 ${animateContainer}`}
+      >
         {portfolios.map((proj) => (
-          <div
-            className="mt-20 rounded-xl portfolio-card mx-5 md:mx-0 hover:scale-110 duration-500"
+          <motion.div
+            className={`mt-5 rounded-xl portfolio-card mx-5 md:mx-0 duration-500 ${item}`}
+            variants={item}
             key={proj.title}
           >
             <div className="relative img-container overflow-hidden rounded-t-xl">
@@ -95,7 +100,7 @@ const Portfolio = () => {
             <div className="text-center bg-white z-10 border rounded-b-lg border-sky-500 py-3">
               <span className="font-semibold text-xl ">{proj.title}</span>
             </div>
-          </div>
+          </motion.div>
         ))}
       </Reveal>
     </div>

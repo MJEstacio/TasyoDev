@@ -11,7 +11,6 @@ export function Reveal({ children, className }) {
     function () {
       if (isView) {
         mainControls.start("visible");
-        console.log("inView");
       }
     },
     [isView],
@@ -24,7 +23,7 @@ export function Reveal({ children, className }) {
         variants={{ hidden: { opacity: 0, y: -75 }, visible: { opacity: 1, y: 0 } }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.5, delay: 0.25, delayChildren: 0.2, staggerChildren: 0.3 }}
+        transition={{ duration: 0.2, delayChildren: 0.4, staggerChildren: 0.2 }}
         className={className}
       >
         {children}
