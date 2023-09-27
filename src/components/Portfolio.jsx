@@ -10,7 +10,7 @@ import firmtech from "../assets/thefirmtech1.jpg";
 import clickhost from "../assets/clickhost.jpg";
 import tairi from "../assets/tairihome.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
-
+import { Reveal } from "./Reveal";
 const Portfolio = () => {
   const portfolios = [
     {
@@ -71,7 +71,8 @@ const Portfolio = () => {
       id="portfolio"
     >
       <span className="backtext ">Portfolio</span>
-      <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0">
+
+      <Reveal className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-0 lg:gap-8 overflow-hidden lg:p-8 p-0">
         {portfolios.map((proj) => (
           <div
             className="mt-20 rounded-xl portfolio-card mx-5 md:mx-0 hover:scale-110 duration-500"
@@ -96,7 +97,7 @@ const Portfolio = () => {
             </div>
           </div>
         ))}
-      </div>
+      </Reveal>
     </div>
   );
 };

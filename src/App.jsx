@@ -8,18 +8,23 @@ import Portfolio from "./components/Portfolio";
 import Services from "./components/Services";
 import Tech from "./components/Tech";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+
 function App() {
   const [darkMode, setDarkMode] = useState(false);
   const [modalForm, setModalForm] = useState(false);
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <Nav handleclick={() => setDarkMode(!darkMode)} openmodal={() => setModalForm(!modalForm)} />
+      <Nav
+        handleclick={() => setDarkMode(!darkMode)}
+        openmodal={() => setModalForm(!modalForm)}
+      />
+
       <Hero />
       <Tech />
       <Portfolio />
       <Services />
+
       <Footer />
       <Copyright />
       {modalForm && <ContactForm openmodal={() => setModalForm(!modalForm)} />}
