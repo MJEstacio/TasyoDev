@@ -23,7 +23,7 @@ export function Reveal({ children, className }) {
         variants={{ hidden: { opacity: 0, y: -75 }, visible: { opacity: 1, y: 0 } }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.2, delayChildren: 0.4, staggerChildren: 0.2 }}
+        transition={{ duration: 0.2, delayChildren: 0.1, staggerChildren: 0.2 }}
         className={className}
       >
         {children}
