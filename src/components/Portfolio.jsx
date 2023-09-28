@@ -79,7 +79,7 @@ const Portfolio = () => {
       >
         {portfolios.map((proj) => (
           <motion.div
-            className={`mt-5 rounded-xl portfolio-card  md:mx-0 duration-500 ${item} shadow-md shadow-sky-500`}
+            className={`mt-5 rounded-xl portfolio-card  md:mx-0 duration-500 ${item} `}
             variants={item}
             key={proj.title}
           >
