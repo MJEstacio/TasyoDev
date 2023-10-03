@@ -63,7 +63,7 @@ const Portfolio = () => {
     {
       title: "The Firm Tech",
       image: firmtech,
-      link: "https://mjestacio.github.io/The-Firmtech/",
+      link: "https://thefirmtech.one/",
     },
   ];
 
