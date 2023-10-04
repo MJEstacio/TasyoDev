@@ -11,7 +11,7 @@ import clickhost from "../assets/clickhost.jpg";
 import tairi from "../assets/tairihome.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Reveal } from "./Reveal";
-import { motion } from "framer-motion";
+
 import { animateContainer, item } from "./Animation";
 const Portfolio = () => {
   const portfolios = [
@@ -19,51 +19,71 @@ const Portfolio = () => {
       title: "Tairi.co",
       image: tairi,
       link: "https://tairi.co/",
+      order: "lg:order-0 ",
+      description:
+        "Supercharge your startup’s tech within just 30 days! At Tairi, we’re all about people. We believe the best way we can help others is through meaningful work.  ",
+      programs: ["NextJs", "TypeScript", "CSS", "Tailwind CSS", "RestAPI", "XML"],
     },
     {
       title: "Clickhost Australia",
       image: clickhost,
       link: "https://clickhost.com.au/",
+      order: "lg:order-1",
+      description:
+        "Fast hosting with a team of experts you can trust. With an average response time of under 10 minutes, it's easy to see why Aussie Businesses love Clickhost.",
+      programs: ["Svelte", "JavaScript", "CSS", "Tailwind CSS", "RestAPI"],
     },
-    {
-      title: "Kati Souza Ministries",
-      image: katie,
-      link: "https://katiesouza.com/",
-    },
-    {
-      title: "Onetrace",
-      image: onetrace,
-      link: "https://onetrace.com/",
-    },
+
     {
       title: "Refers @ SMDC",
       image: smdc,
       link: "https://refer.smdc.com/",
+      order: "lg:order-0",
+      description:
+        "Whether you are a fresh graduate, working that 9 to 5, or a stay-at-home mom (or dad) who wants to earn more income to fund your dreams – this is for you!",
+      programs: ["HTML", "CSS", "mySQL", "jQuery", "WordPress"],
     },
     {
       title: "Circle M Meats",
       image: meats,
       link: "https://circlemmeats.wpengine.com/",
+      order: "lg:order-1",
+      description:
+        "Circle M Meats’ top priority is providing delivery of premium-quality beef, pork and chicken to socially conscious buyers.",
+      programs: ["HTML", "CSS", "mySQL", "jQuery", "ColdFusion"],
     },
     {
       title: "Norms Farms",
       image: norms,
       link: "https://normsfarms.com/",
+      order: "lg:order-0",
+      description:
+        "At Norm’s Farms, we’re dedicated to creating the best elderberry products on the market. Every supplement we sell is 3rd-party tested for quality and authenticity.",
     },
     {
       title: "Concepstore",
       image: concep,
       link: "https://concepstore.com/",
+      order: "lg:order-1",
+      description: "Get a Glimpse of Great Home Life! Modern Design Home Appliances.",
+      programs: ["HTML", "CSS", "Liquid", "Shopify"],
     },
     {
       title: "Dragonfly Saas",
       image: dragonfly,
       link: "https://mjestacio-dragonflysaas.netlify.app/",
+      order: "lg:order-0",
+      description:
+        "Dragonfly SaaS is a simple and cloud based retention and user insight system for your business. It comes with a complete dashboard, putting you in control so you can increase your COA, retention and figure out the abusers from the high value with a few simple clicks.",
+      programs: ["HTML", "CSS", "SCSS", "JavaScript"],
     },
     {
       title: "The Firm Tech",
       image: firmtech,
       link: "https://thefirmtech.one/",
+      order: "lg:order-1",
+      description: "Transforming your vision into reality with The Firm tech.",
+      programs: ["HTML", "CSS", "SCSS", "JavaScript"],
     },
   ];
 
@@ -74,22 +94,24 @@ const Portfolio = () => {
     >
       <span className="backtext ">Portfolio</span>
 
-      <Reveal
-        className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0 md:gap-8 overflow-hidden  pt-20 px-2 md:px-5 2xl::px-0 ${animateContainer}`}
+      <div
+        className={`grid grid-cols-1 gap-0 md:gap-8  pt-28 px-2 md:px-5 2xl:px-0 ${animateContainer}`}
       >
-        {portfolios.map((proj) => (
+        {portfolios.map(({ title, image, link, order, description, programs }) => (
           <Reveal
-            className={`mt-5 rounded-xl portfolio-card  md:mx-0 duration-500 ${item} `}
-            variants={item}
-            key={proj.title}
+            y={100}
+            className={`mt-5 rounded-xl portfolio-card my-20 md:mx-0 duration-500 flex flex-col lg:flex-row  gap-2 lg:gap-20  `}
+            key={title}
           >
-            <div className="relative img-container overflow-hidden rounded-t-xl">
+            <div
+              className={`relative img-container overflow-hidden lg:basis-1/2 ${order} hover:shadow-lg rounded-md duration-300 hover:shadow-sky-300 ring-2 ring-offset-1 `}
+            >
               <img
-                src={proj.image}
-                alt={proj.title}
+                src={image}
+                alt={title}
               />
               <a
-                href={proj.link}
+                href={link}
                 target="_blank"
               >
                 <div className="overlay">
@@ -97,12 +119,19 @@ const Portfolio = () => {
                 </div>
               </a>
             </div>
-            <div className="text-center bg-white z-10 border rounded-b-lg border-sky-500 py-3">
-              <span className="font-semibold text-xl ">{proj.title}</span>
-            </div>
+            <Reveal
+              x={100}
+              className=" py-5 lg:basis-1/2 px-2 lg:px-10 "
+            >
+              <h2 className="font-bold text-3xl  dark:text-white ">{title}</h2>
+              <p className="mt-5 italic  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base">
+                {description}
+              </p>
+              <div className="flex gap-2"></div>
+            </Reveal>
           </Reveal>
         ))}
-      </Reveal>
+      </div>
     </section>
   );
 };

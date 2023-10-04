@@ -32,11 +32,11 @@ input {
   @apply my-5;
 }
 
-.portfolio-card:hover .img-container .overlay {
+.portfolio-card .img-container:hover .overlay {
   transform: translateY(0);
 }
 
-.portfolio-card:hover .img-container img {
+.portfolio-card .img-container:hover img {
   transform: scale(1.2);
   transition: 1000ms ease-in-out;
 }
