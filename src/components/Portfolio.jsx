@@ -68,7 +68,7 @@ const Portfolio = () => {
   ];
 
   return (
-    <div
+    <section
       className=" relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black  "
       id="portfolio"
     >
@@ -78,7 +78,7 @@ const Portfolio = () => {
         className={`grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-0 md:gap-8 overflow-hidden  pt-20 px-2 md:px-5 2xl::px-0 ${animateContainer}`}
       >
         {portfolios.map((proj) => (
-          <motion.div
+          <Reveal
             className={`mt-5 rounded-xl portfolio-card  md:mx-0 duration-500 ${item} `}
             variants={item}
             key={proj.title}
@@ -100,10 +100,10 @@ const Portfolio = () => {
             <div className="text-center bg-white z-10 border rounded-b-lg border-sky-500 py-3">
               <span className="font-semibold text-xl ">{proj.title}</span>
             </div>
-          </motion.div>
+          </Reveal>
         ))}
       </Reveal>
-    </div>
+    </section>
   );
 };
 

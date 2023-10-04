@@ -17,18 +17,15 @@ export function Reveal({ children, className }) {
   );
 
   return (
-    <div>
-      <motion.div
-        ref={ref}
-        variants={{ hidden: { opacity: 0, y: -75 }, visible: { opacity: 1, y: 0 } }}
-        initial="hidden"
-        animate={mainControls}
-        transition={{ duration: 0.2, delayChildren: 0.1, staggerChildren: 0.2 }}
-        className={className}
-      >
-        {children}
-      </motion.div>
-      ;
-    </div>
+    <motion.div
+      ref={ref}
+      variants={{ hidden: { opacity: 0, y: -100 }, visible: { opacity: 1, y: 0 } }}
+      initial="hidden"
+      animate={mainControls}
+      transition={{ duration: 0.5, delayChildren: 0.1, staggerChildren: 0.2 }}
+      className={className}
+    >
+      {children}
+    </motion.div>
   );
 }

@@ -5,8 +5,8 @@ import mjpic from "../assets/mjpic.png";
 import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
 
-import { animateContainer, item } from "./Animation";
-const Hero = () => {
+import { item } from "./Animation";
+const Hero = (darkMode) => {
   return (
     <Reveal
       className={`min-h-[110vh] flex items-center justify-center overflow-hidden `}
@@ -49,13 +49,13 @@ const Hero = () => {
           <a href="https://github.com/MJEstacio">
             <BsGithub
               size={30}
-              className="text-black hover:text-sky-500 duration-500 cursor-pointer"
+              className={` hover:text-sky-500 duration-500 cursor-pointer`}
             />
           </a>
           <a href="mailto:mjestacioiii@gmail.com">
             <AiOutlineMail
               size={30}
-              className="text-slate-800 hover:text-sky-500 duration-500 cursor-pointer"
+              className=" hover:text-sky-500 duration-500 cursor-pointer"
             />
           </a>
         </div>

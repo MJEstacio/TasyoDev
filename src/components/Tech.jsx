@@ -120,7 +120,7 @@ const Tech = () => {
   // }, []);
 
   return (
-    <div
+    <section
       className="tech "
       id="tech"
     >
@@ -141,7 +141,7 @@ const Tech = () => {
           })}
         </motion.div>
       </Reveal>
-    </div>
+    </section>
   );
 };
 

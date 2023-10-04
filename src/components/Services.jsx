@@ -76,13 +76,12 @@ const services = [
 
 const Services = () => {
   return (
-    <div
+    <section
       className="relative flex max-w-[1440px] mx-auto px-2"
       id="services"
-      variants={item}
     >
       <span className="backtext  ">Services</span>
-      <Reveal className={`grid grid-cols-1 lg:grid-cols-3 my-32 gap-5 text-center`}>
+      <Reveal className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 my-32 gap-5 text-center`}>
         {services.map((card) => (
           <motion.div
             className="service-card"
@@ -95,7 +94,7 @@ const Services = () => {
           </motion.div>
         ))}
       </Reveal>
-    </div>
+    </section>
   );
 };
 

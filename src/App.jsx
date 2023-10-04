@@ -20,11 +20,10 @@ function App() {
         openmodal={() => setModalForm(!modalForm)}
       />
 
-      <Hero />
+      <Hero darkMode={darkMode} />
       <Tech />
       <Portfolio />
       <Services />
-
       <Footer />
       <Copyright />
       {modalForm && <ContactForm openmodal={() => setModalForm(!modalForm)} />}

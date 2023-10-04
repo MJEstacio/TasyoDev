@@ -6,11 +6,15 @@ import { BsFacebook, BsWhatsapp, BsTelegram } from "react-icons/bs";
 import { MdEmail } from "react-icons/md";
 const Footer = () => {
   return (
-    <section className="bg-gradient-to-r from-sky-500 to-sky-300 py-20 dark:text-slate-800">
+    <footer className="bg-gradient-to-r from-sky-500 to-sky-300 py-20 dark:text-slate-800">
       <div className="max-w-[1440px] mx-auto flex justify-between flex-col md:flex-row">
         <div className="flex relative p-10 basis-[50%]">
           <div className="flex flex-col justify-center items-center mx-auto  relative z-10 ">
-            <img src={mjelogo} alt="mjelogo" className="w-20 rounded-full" />
+            <img
+              src={mjelogo}
+              alt="mjelogo"
+              className="w-20 rounded-full"
+            />
             <span className="text-2xl font-semibold text-white">TasyoDev</span>
           </div>
         </div>
@@ -22,7 +26,7 @@ const Footer = () => {
             </div>
             <div className="flex items-center gap-4 relative z-10">
               <BsWhatsapp size={25} />
-              <span>+639205010266</span>
+              <span>+639653458348</span>
             </div>
             <div className="flex items-center gap-4 relative z-10">
               <BsTelegram size={25} />
@@ -37,7 +41,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </section>
+    </footer>
   );
 };
 
