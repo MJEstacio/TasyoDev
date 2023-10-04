@@ -10,7 +10,7 @@ const Nav = ({ handleclick, openmodal }) => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-screen overflow-x-hidden bg-white/80 z-50 px-5 dark:bg-slate-900/90 duration-500">
+    <header className="fixed top-0 left-0 w-screen overflow-x-hidden bg-sky-50/80 z-50 px-5 dark:bg-slate-900/90 duration-500">
       <nav className="max-w-[1440px] mx-auto py-2 flex items-center justify-between">
         <a
           href="https://mjestacio.github.io/TasyoDev/"
