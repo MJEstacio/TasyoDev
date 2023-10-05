@@ -127,16 +127,10 @@ const Hero = () => {
         </div>
         <motion.div
           initial={{
-            x: "-100vw",
+            opacity: 0,
           }}
           animate={{
-            x: 0,
-            rotate: 360,
-          }}
-          transition={{
-            type: "spring",
-            duration: 5,
-            bounce: 0.5,
+            opacity: 1,
           }}
           className="w-[200px] h-[200px] bg-gradient-to-b from-sky-500 to-sky-100 flex mx-auto rounded-full overflow-hidden object-contain flex items-center justify-center my-10"
         >
