@@ -49,7 +49,7 @@ const Portfolio = () => {
       link: "https://circlemmeats.wpengine.com/",
       order: "lg:order-1",
       description:
-        "Circle M Meats’ top priority is providing delivery of premium-quality beef, pork and chicken to socially conscious buyers.",
+        "Circle M Meats’ top priority is providing delivery of premium-quality beef, pork and chicken to socially conscious buyers.  We are a completely vertically integrated meat company, from our unique feeding program all the way through to the thought and care we put into our aging program. You can have peace of mind knowing that we take great pride in being responsible for every aspect of our animals’ journey.",
       programs: ["HTML", "CSS", "mySQL", "jQuery", "ColdFusion"],
     },
     {
@@ -65,7 +65,8 @@ const Portfolio = () => {
       image: concep,
       link: "https://concepstore.com/",
       order: "lg:order-1",
-      description: "Get a Glimpse of Great Home Life! Modern Design Home Appliances.",
+      description:
+        "Concepstore helps you design and refine your home by addressing your household’s most pressing concerns as they arrive. We do this by not only giving you a wealth of options to choose from, but by also helping you decide which household appliances would best suit your home. Whether these decisions are influenced by health, safety, security, and hygiene concerns or by the simple need to automate time-consuming chores, Concepstore is sure to have something just for you.",
       programs: ["HTML", "CSS", "Liquid", "Shopify"],
     },
     {
@@ -82,7 +83,8 @@ const Portfolio = () => {
       image: firmtech,
       link: "https://thefirmtech.one/",
       order: "lg:order-1",
-      description: "Transforming your vision into reality with The Firm tech.",
+      description:
+        "Transforming your vision into reality with The Firm tech. Our cohesive team of exceptionally skilled individuals collaborates to deliver innovative ideas and cutting-edge technology solutions to companies and brands. With diverse backgrounds spanning various industries, we unite to provide the latest tech advancements, unparalleled design expertise, and tailored solutions that perfectly meet our clients' specific requirements.",
       programs: ["HTML", "CSS", "SCSS", "JavaScript"],
     },
   ];
@@ -124,7 +126,7 @@ const Portfolio = () => {
               className=" py-5 lg:basis-1/2 px-2 lg:px-10 "
             >
               <h2 className="font-bold text-3xl  dark:text-white ">{title}</h2>
-              <p className="mt-3 italic  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base mb-10">
+              <p className="mt-3  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base mb-10">
                 {description}
               </p>
               <a
