@@ -14,7 +14,7 @@ function App() {
   const [modalForm, setModalForm] = useState(false);
 
   return (
-    <div className={darkMode ? "dark" : ""}>
+    <main className={darkMode ? "dark" : ""}>
       <Nav
         handleclick={() => setDarkMode(!darkMode)}
         openmodal={() => setModalForm(!modalForm)}
@@ -27,7 +27,7 @@ function App() {
       <Footer />
       <Copyright />
       {modalForm && <ContactForm openmodal={() => setModalForm(!modalForm)} />}
-    </div>
+    </main>
   );
 }
 

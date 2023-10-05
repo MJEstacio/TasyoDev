@@ -89,15 +89,15 @@ const Portfolio = () => {
 
   return (
     <section
-      className=" relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black  "
+      className=" relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black overflow-hidden  "
       id="portfolio"
     >
       <span className="backtext ">Portfolio</span>
 
       <div
-        className={`grid grid-cols-1 gap-0 md:gap-8  pt-28 px-2 md:px-5 2xl:px-0 ${animateContainer}`}
+        className={`grid grid-cols-1 gap-0 md:gap-8  pt-28 px-2 md:px-5 2xl:px-3 ${animateContainer}  `}
       >
-        {portfolios.map(({ title, image, link, order, description, programs }) => (
+        {portfolios.map(({ title, image, link, order, description }) => (
           <Reveal
             y={100}
             className={`mt-5 rounded-xl portfolio-card my-20 md:mx-0 duration-500 flex flex-col lg:flex-row  gap-2 lg:gap-20  `}
@@ -115,7 +115,7 @@ const Portfolio = () => {
                 target="_blank"
               >
                 <div className="overlay">
-                  <FaExternalLinkAlt className="text-sky-200 text-4xl" />
+                  <FaExternalLinkAlt className="text-sky-200 text-4xl " />
                 </div>
               </a>
             </div>
@@ -124,9 +124,17 @@ const Portfolio = () => {
               className=" py-5 lg:basis-1/2 px-2 lg:px-10 "
             >
               <h2 className="font-bold text-3xl  dark:text-white ">{title}</h2>
-              <p className="mt-5 italic  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base">
+              <p className="mt-3 italic  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base mb-10">
                 {description}
               </p>
+              <a
+                href={link}
+                target="_blank"
+                className="bg-sky-400 px-4 py-2 rounded-md text-white duration-500 font-semibold hover:bg-transparent hover:ring-2 hover:text-sky-400 hover:ring-sky-400 "
+              >
+                Live Preview
+              </a>
+
               <div className="flex gap-2"></div>
             </Reveal>
           </Reveal>

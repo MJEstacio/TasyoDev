@@ -14,22 +14,41 @@ const Hero = () => {
       id="hero"
     >
       <Reveal
-        className={`text-center max-w-7xl mt-32 ${item}`}
+        className={`text-center max-w-7xl mt-32 ${item} overflow-hidden`}
         variants={item}
       >
-        <h1 className="text-3xl md:text-5xl font-semibold text-sky-500 mb-5">
+        <motion.h1
+          initial={{ x: -100, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8 }}
+          className="text-3xl md:text-5xl font-semibold text-sky-500 mb-5"
+        >
           Mark Joseph Estacio
-        </h1>
-        <h2 className="text-xl">Freelance Web Developer</h2>
-        <p className="py-5 px-10 max-w-[800px]">
+        </motion.h1>
+        <motion.h2
+          initial={{ x: 100 }}
+          animate={{ x: 0 }}
+          transition={{ duration: 1.2 }}
+          className="text-xl"
+        >
+          Freelance Web Developer
+        </motion.h2>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 1.2 }}
+          className="py-5 px-10 max-w-[800px]"
+        >
           A passionate, organized, and detail-oriented Front-End Developer with extensive experience
           in maintaining and building responsive and animated web pages to deliver exceptional
           customer experiences. I am adept at contributing to a highly collaborative work
           environment, finding solutions, determining customer satisfaction, and seeking new
           opportunities and challenges that will expand my skill set.
-        </p>
-        <div className="social-icons gap-2 lg:gap-5 justify-center">
+        </motion.p>
+        <div className="social-icons gap-5 justify-center">
           <motion.div
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             whileHover={{ scale: 1.2, rotate: 360 }}
             whileTap={{
               scale: 0.8,
@@ -49,6 +68,8 @@ const Hero = () => {
             </a>
           </motion.div>
           <motion.div
+            initial={{ x: -100, y: 100, opacity: 0 }}
+            animate={{ x: 0, y: 0, opacity: 1 }}
             whileHover={{ scale: 1.2, rotate: 360 }}
             whileTap={{
               scale: 0.8,
@@ -68,6 +89,8 @@ const Hero = () => {
             </a>
           </motion.div>
           <motion.div
+            initial={{ x: 100, y: 100, opacity: 0 }}
+            animate={{ x: 0, y: 0, opacity: 1 }}
             whileHover={{ scale: 1.2, rotate: 360 }}
             whileTap={{
               scale: 0.8,
@@ -84,6 +107,8 @@ const Hero = () => {
             </a>
           </motion.div>
           <motion.div
+            initial={{ x: 100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
             whileHover={{ scale: 1.2, rotate: 360 }}
             whileTap={{
               scale: 0.8,

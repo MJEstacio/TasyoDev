@@ -49,6 +49,7 @@ const ContactForm = ({ openmodal }) => {
             ? "w-full h-full duration-300 bg-black/90  fixed top-0 left-0 z-[600] opacity-100 translate-x-0 flex justify-center items-center text-black backdrop:blur-sm"
             : "w-full h-full duration-300 bg-black/90  fixed top-0 translate-x-full left-0 z-[600] opacity-0 flex justify-center items-center text-black backdrop:blur-sm"
         }
+        onClick={openmodal}
       >
         <div className="max-w-5xl bg-white flex flex-col p-10 mx-5 rounded-md   border-sky-500 border-2  shadow shadow-sky-500 relative text">
           <AiOutlineClose
@@ -64,7 +65,10 @@ const ContactForm = ({ openmodal }) => {
             <div className="grid grid-cols-2 sm:grid-cols-4 gap-5  justify-center my-5">
               {messenger.map((m) => (
                 <div key={m.app}>
-                  <a href={m.link} target="_blank">
+                  <a
+                    href={m.link}
+                    target="_blank"
+                  >
                     {m.icon}
                     <h3 className="text-center">{m.app}</h3>
                   </a>

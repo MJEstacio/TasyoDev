@@ -92,6 +92,7 @@ const Nav = ({ handleclick, openmodal }) => {
             ? " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden translate-x-[100%] backdrop:blur-sm overlay "
             : " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden overlay"
         }
+        onClick={() => setNav(!nav)}
       >
         <nav
           className={
