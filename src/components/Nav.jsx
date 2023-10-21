@@ -87,18 +87,18 @@ const Nav = ({ handleclick, openmodal }) => {
       </nav>
       {/* Mobile Menu */}
       <div
+        onClick={() => setNav(!nav)}
         className={
           !nav
-            ? " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden translate-x-[100%] backdrop:blur-sm overlay "
-            : " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden overlay"
+            ? " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden translate-x-[100%] backdrop:blur-sm overlay z-40 "
+            : " fixed top-0 left-0 bg-black/90 w-full h-full flex justify-end overflow-hidden overlay z-40 "
         }
-        onClick={() => setNav(!nav)}
       >
         <nav
           className={
             !nav
-              ? "w-[300px] bg-sky-100 flex justify-center items-center translate-x-[100%] duration-300 relative dark:bg-slate-900"
-              : "w-[300px] bg-sky-100 flex justify-center items-center duration-300 relative dark:bg-slate-900"
+              ? "w-[300px] bg-sky-100 flex justify-center items-center translate-x-[100%] duration-300 relative dark:bg-slate-900 z-50"
+              : "w-[300px] bg-sky-100 flex justify-center items-center duration-300 relative dark:bg-slate-900 z-50"
           }
         >
           <AiOutlineClose

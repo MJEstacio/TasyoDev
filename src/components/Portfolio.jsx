@@ -132,7 +132,7 @@ const Portfolio = () => {
               <a
                 href={link}
                 target="_blank"
-                className="bg-sky-400 px-4 py-2 rounded-md text-white duration-500 font-semibold hover:bg-transparent hover:ring-2 hover:text-sky-400 hover:ring-sky-400 "
+                className="bg-sky-400 px-8 py-3 rounded-md text-white duration-500 font-semibold hover:bg-transparent hover:ring-2 hover:text-sky-400 hover:ring-sky-400 "
               >
                 Visit Site
               </a>

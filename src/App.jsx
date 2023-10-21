@@ -14,7 +14,7 @@ function App() {
   const [modalForm, setModalForm] = useState(false);
 
   return (
-    <main className={darkMode ? "dark" : ""}>
+    <main className={`${darkMode ? "dark" : ""} text-slate-800`}>
       <Nav
         handleclick={() => setDarkMode(!darkMode)}
         openmodal={() => setModalForm(!modalForm)}

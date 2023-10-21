@@ -25,7 +25,7 @@ export function Reveal({ children, className, x, y }) {
       }}
       initial="hidden"
       animate={mainControls}
-      transition={{ duration: 0.5, delayChildren: 0.8, staggerChildren: 0.2 }}
+      transition={{ duration: 0.5, delayChildren: 0.5, staggerChildren: 0.2 }}
       className={className}
     >
       {children}

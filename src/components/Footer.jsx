@@ -1,7 +1,7 @@
 import React from "react";
 import footersvg from "../assets/footer.svg";
 import mjelogo from "../assets/mjelogo.jpg";
-import { BsFacebook, BsWhatsapp, BsTelegram } from "react-icons/bs";
+import { BsWhatsapp, BsTelegram } from "react-icons/bs";
 
 import { MdEmail } from "react-icons/md";
 const Footer = () => {
