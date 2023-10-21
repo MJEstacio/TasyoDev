@@ -137,7 +137,7 @@ const Tech = () => {
             {techStack.map((techs) => {
               return (
                 <motion.div
-                  className={`flex flex-col items-center p-5 border border-2 rounded-md text-gray-800 dark:bg-white ${item}`}
+                  className={`flex flex-col items-center p-5 border border-2 rounded-md text-slate-800 dark:bg-white ${item} shadow-md`}
                   key={techs.stack}
                   variants={item}
                 >

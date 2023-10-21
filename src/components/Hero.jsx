@@ -132,7 +132,7 @@ const Hero = () => {
           animate={{
             opacity: 1,
           }}
-          className="w-[200px] h-[200px] bg-gradient-to-b from-sky-500 to-sky-100 flex mx-auto rounded-full overflow-hidden object-contain flex items-center justify-center my-10"
+          className="w-[200px] h-[200px] bg-gradient-to-b from-sky-500 to-sky-100 flex mx-auto rounded-full overflow-hidden object-contain flex items-center justify-center my-10 shadow-md shadow-sky-500/50"
         >
           <img
             src={mjpic}
