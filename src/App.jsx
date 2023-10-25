@@ -14,20 +14,21 @@ function App() {
   const [modalForm, setModalForm] = useState(false);
 
   return (
-    <main className={`${darkMode ? "dark" : ""} text-slate-800`}>
+    <>
       <Nav
         handleclick={() => setDarkMode(!darkMode)}
         openmodal={() => setModalForm(!modalForm)}
       />
-
-      <Hero />
-      <Tech />
-      <Portfolio />
-      <Services />
-      <Footer />
-      <Copyright />
-      {modalForm && <ContactForm openmodal={() => setModalForm(!modalForm)} />}
-    </main>
+      <main className={`${darkMode ? "dark" : ""} text-slate-800`}>
+        <Hero />
+        <Tech />
+        <Portfolio />
+        <Services />
+        <Footer />
+        <Copyright />
+        {modalForm && <ContactForm openmodal={() => setModalForm(!modalForm)} />}
+      </main>
+    </>
   );
 }
 
