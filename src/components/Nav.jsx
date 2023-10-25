@@ -1,16 +1,43 @@
 import React from "react";
 import MJLogo from "../assets/mjelogo.jpg";
 import { BsFillMoonStarsFill, BsFillSunFill } from "react-icons/bs";
-import { RiFilePaper2Line, RiMenu3Line } from "react-icons/ri";
+import { RiMenu3Line } from "react-icons/ri";
 import { AiOutlineClose } from "react-icons/ai";
 
 import { useState } from "react";
 
-const Nav = ({ handleclick, openmodal }) => {
+const links = [
+  {
+    linkName: "Home",
+    url: "#",
+  },
+  {
+    linkName: "Tech",
+    url: "#tech",
+  },
+  {
+    linkName: "Certificates",
+    url: "#certificates",
+  },
+  {
+    linkName: "Portfolio",
+    url: "#portfolio",
+  },
+  {
+    linkName: "Services",
+    url: "#services",
+  },
+];
+
+const Nav = ({ handleclick, openmodal, darkMode }) => {
   const [nav, setNav] = useState(false);
 
   return (
-    <header className="fixed top-0 left-0 w-screen overflow-x-hidden bg-sky-50/80 z-50 px-5 dark:bg-slate-900/90 duration-500">
+    <header
+      className={`${
+        darkMode ? "dark" : ""
+      }  fixed top-0  left-0 w-screen overflow-x-hidden bg-sky-50/80 z-50 px-5 dark:bg-slate-900/90 duration-500`}
+    >
       <nav className="max-w-[1440px] mx-auto py-2 flex items-center justify-between">
         <a
           href="https://mjestacio.github.io/TasyoDev/"
@@ -24,45 +51,24 @@ const Nav = ({ handleclick, openmodal }) => {
           <span className="text-2xl font-semibold text-sky-500">TasyoDev</span>
         </a>
         <ul className=" gap-5 items-center flex">
+          {links.map((link) => (
+            <li key={link.linkName}>
+              <a
+                href={link.url}
+                className="hidden lg:flex font-semibold hover:text-sky-500 duration-300"
+              >
+                {link.linkName}
+              </a>
+            </li>
+          ))}
+
           <li>
-            <a
-              href="#"
-              className="hidden lg:flex font-semibold hover:text-sky-500 duration-300"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#tech"
-              className="hidden lg:flex font-semibold hover:text-sky-500 duration-300"
-            >
-              Tech
-            </a>
-          </li>
-          <li>
-            <a
-              href="#portfolio"
-              className="hidden lg:flex font-semibold hover:text-sky-500 duration-300"
-            >
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services"
-              className="hidden lg:flex font-semibold hover:text-sky-500 duration-300"
-            >
-              Services
-            </a>
-          </li>
-          <li>
-            <a
+            <button
               className="hidden lg:flex font-semibold hover:text-sky-500 duration-300 cursor-pointer"
               onClick={openmodal}
             >
               Let's Talk
-            </a>
+            </button>
           </li>
           <li className="relative overflow-hidden">
             <BsFillMoonStarsFill
@@ -107,18 +113,15 @@ const Nav = ({ handleclick, openmodal }) => {
             onClick={() => setNav(!nav)}
           />
           <ul className="flex flex-col gap-5 text-2xl font-semibold text-sky-500 ">
-            <li className="duration-200 hover:text-slate-500 cursor-pointer">
-              <a href="#hero">Home</a>
-            </li>
-            <li className="duration-200 hover:text-slate-500 cursor-pointer">
-              <a href="#tech">Tech</a>
-            </li>
-            <li className="duration-200 hover:text-slate-500 cursor-pointer">
-              <a href="#portfolio">Portfolio</a>
-            </li>
-            <li className="duration-200 hover:text-slate-500 cursor-pointer">
-              <a href="#services">Services</a>
-            </li>
+            {links.map((link) => (
+              <li
+                key={link.linkName}
+                className="duration-200 hover:text-slate-500 cursor-pointer"
+              >
+                <a href={link.url}>{link.linkName}</a>
+              </li>
+            ))}
+
             <li>
               <a
                 className="duration-200 hover:text-slate-500 cursor-pointer"

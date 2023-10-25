@@ -4,7 +4,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import mjpic from "../assets/mjpic.png";
 import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
-
 import { item } from "./Animation";
 
 const Hero = () => {
@@ -39,10 +38,11 @@ const Hero = () => {
           transition={{ duration: 1.2 }}
           className="py-5 px-10 max-w-[800px]"
         >
-          A passionate, organized, and detail-oriented Front-End Developer with extensive experience
-          in maintaining and building responsive and animated web pages to deliver exceptional
-          customer experiences. I am adept at contributing to a highly collaborative work
-          environment, finding solutions, determining customer satisfaction, and seeking new
+          A passionate, organized, and detail-oriented Front-End Developer with
+          extensive experience in maintaining and building responsive and
+          animated web pages to deliver exceptional customer experiences. I am
+          adept at contributing to a highly collaborative work environment,
+          finding solutions, determining customer satisfaction, and seeking new
           opportunities and challenges that will expand my skill set.
         </motion.p>
         <div className="social-icons gap-5 justify-center">
@@ -85,6 +85,7 @@ const Hero = () => {
               <BsLinkedin
                 size={30}
                 className="text-sky-600 hover:text-sky-500 duration-500 cursor-pointer"
+                target="_blank"
               />
             </a>
           </motion.div>
@@ -99,7 +100,10 @@ const Hero = () => {
             }}
             transition={{ duration: 0.5 }}
           >
-            <a href="https://github.com/MJEstacio">
+            <a
+              href="https://github.com/MJEstacio"
+              target="_blank"
+            >
               <BsGithub
                 size={30}
                 className={` hover:text-sky-500 duration-500 cursor-pointer`}

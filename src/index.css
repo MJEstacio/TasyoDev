@@ -64,6 +64,18 @@ input {
   @apply bg-gradient-to-r from-sky-500 to-sky-300 w-full h-full -z-10;
 }
 
+#cta-section {
+  @apply py-40 relative z-20 my-20;
+}
+#cta-section::after {
+  content: "";
+  top: 0;
+  left: 0;
+  inset: 0;
+  transform: skewY(3deg);
+  position: absolute;
+  @apply bg-sky-50 w-full h-full -z-10 drop-shadow-md;
+}
 @-ms-keyframes spin {
   from {
     -ms-transform: rotate(0deg);

@@ -1,5 +1,9 @@
 import React from "react";
-import { BsCodeSlash, BsGear, BsLayoutTextSidebarReverse } from "react-icons/bs";
+import {
+  BsCodeSlash,
+  BsGear,
+  BsLayoutTextSidebarReverse,
+} from "react-icons/bs";
 import { MdWeb } from "react-icons/md";
 import { GiShop } from "react-icons/gi";
 import { ImPencil2 } from "react-icons/im";
@@ -48,7 +52,7 @@ const services = [
         className="text-sky-500 mt-5 mx-auto"
       />
     ),
-    title: "Logo Design & Branding",
+    title: "Content Management Systems (CMS)",
     content:
       "Samples will show you the feeling on how to play around using the components in the website building process.",
   },
@@ -70,7 +74,8 @@ const services = [
       />
     ),
     title: "Tech Consultations & Operations Management",
-    content: "You can decide whether to create your site using UI Kit blocks or samples.",
+    content:
+      "You can decide whether to create your site using UI Kit blocks or samples.",
   },
 ];
 
@@ -81,7 +86,9 @@ const Services = () => {
       id="services"
     >
       <span className="backtext  ">Services</span>
-      <Reveal className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 my-32 gap-5 text-center`}>
+      <Reveal
+        className={`grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 my-32 gap-5 text-center`}
+      >
         {services.map((card) => (
           <motion.div
             className="service-card"

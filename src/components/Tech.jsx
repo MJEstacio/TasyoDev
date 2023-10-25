@@ -14,7 +14,6 @@ import { IoLogoNodejs } from "react-icons/io";
 import { Reveal } from "./Reveal";
 import { animateContainer, item } from "./Animation";
 import { motion } from "framer-motion";
-import TechImg from "../assets/techimg.gif";
 
 const techStack = [
   {
@@ -142,7 +141,9 @@ const Tech = () => {
                   variants={item}
                 >
                   {techs.icon}
-                  <span className="font-semibold text-slate-800">{techs.stack}</span>
+                  <span className="font-semibold text-slate-800">
+                    {techs.stack}
+                  </span>
                 </motion.div>
               );
             })}
