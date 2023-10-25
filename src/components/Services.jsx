@@ -6,8 +6,8 @@ import {
 } from "react-icons/bs";
 import { MdWeb } from "react-icons/md";
 import { GiShop } from "react-icons/gi";
-import { ImPencil2 } from "react-icons/im";
 
+import { BsCardText } from "react-icons/bs";
 import { item } from "./Animation";
 import { motion } from "framer-motion";
 import { Reveal } from "./Reveal";
@@ -47,7 +47,7 @@ const services = [
   },
   {
     icon: (
-      <ImPencil2
+      <BsCardText
         size={40}
         className="text-sky-500 mt-5 mx-auto"
       />
