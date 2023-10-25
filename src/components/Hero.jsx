@@ -36,7 +36,7 @@ const Hero = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 1.2 }}
-          className="py-5 px-10 max-w-[800px]"
+          className="py-5 px-10 max-w-[800px] text-sm sm:text-base"
         >
           A passionate, organized, and detail-oriented Front-End Developer with
           extensive experience in maintaining and building responsive and

@@ -126,7 +126,7 @@ const Tech = () => {
     >
       <Reveal>
         <div className="max-w-fit pb-14  h-2 mx-auto relative">
-          <h2 className="text-xl md:text-4xl text-white font-bold">
+          <h2 className="text-xl md:text-4xl text-white font-bold text-center">
             Tech Stack Tools and Frameworks
           </h2>
           <div className="w-1/2 h-1 rounded-xl   bg-slate-200 absolute left-0 translate-x-1/2 translate-y-5"></div>

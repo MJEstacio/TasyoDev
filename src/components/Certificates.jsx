@@ -56,7 +56,7 @@ const Certificates = () => {
   return (
     <section
       id="certificates"
-      className="relative mt-20 px-2 xl:px-0 dark:text-slate-800"
+      className="relative mt-20 px-3 xl:px-0 dark:text-slate-800"
     >
       <div className="max-w-7xl mx-auto pt-40">
         <h1 className="backtext">Certificates</h1>
