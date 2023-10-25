@@ -70,7 +70,7 @@ const Certificates = () => {
               <img
                 src={cert.imageUrl}
                 alt={cert.title}
-                className=" object-contain max-h-72  mx-auto mb-5 "
+                className=" object-contain max-h-72  m-auto pb-5 "
               />
               <div className="min-h-[12rem] flex flex-col justify-between">
                 <h4 className="border-t-[1px] pt-5 text-center font-semibold text-lg">
