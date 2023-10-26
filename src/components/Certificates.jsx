@@ -83,7 +83,7 @@ const Certificates = () => {
                     target="_blank"
                     className="text-small font-semibold  text-white bg-sky-500 px-4 py-2 rounded-lg hover:ring-2 hover:bg-sky-50 hover:text-sky-500 duration-300 shadow-md hover:shadow-lg"
                   >
-                    Check Validity
+                    Certificate Link
                   </a>
                 </div>
                 <div>
