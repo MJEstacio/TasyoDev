@@ -82,7 +82,7 @@ const services = [
 const Services = () => {
   return (
     <section
-      className="relative flex max-w-[1440px] mx-auto px-2"
+      className="relative flex max-w-[1440px] mx-auto px-2 mt-10"
       id="services"
     >
       <span className="backtext  ">Services</span>

@@ -63,14 +63,14 @@ const Hero = () => {
             >
               <BsFacebook
                 size={30}
-                className="text-blue-600   hover:text-sky-500 duration-500 cursor-pointer"
+                className="text-blue-600  hover:text-sky-500 duration-500 cursor-pointer"
               />
             </a>
           </motion.div>
           <motion.div
             initial={{ x: -100, y: 100, opacity: 0 }}
             animate={{ x: 0, y: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileHover={{ scale: 1.2, rotate: -360 }}
             whileTap={{
               scale: 0.8,
               rotate: -360,
@@ -113,7 +113,7 @@ const Hero = () => {
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: 360 }}
+            whileHover={{ scale: 1.2, rotate: -360 }}
             whileTap={{
               scale: 0.8,
               rotate: -360,

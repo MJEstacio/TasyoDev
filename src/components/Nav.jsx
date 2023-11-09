@@ -15,13 +15,14 @@ const links = [
     linkName: "Tech",
     url: "#tech",
   },
-  {
-    linkName: "Certificates",
-    url: "#certificates",
-  },
+
   {
     linkName: "Portfolio",
     url: "#portfolio",
+  },
+  {
+    linkName: "Certificates",
+    url: "#certificates",
   },
   {
     linkName: "Services",
