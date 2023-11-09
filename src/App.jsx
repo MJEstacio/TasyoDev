@@ -26,9 +26,10 @@ function App() {
       <main className={`${darkMode ? "dark" : ""} text-slate-800`}>
         <Hero />
         <Tech />
+        <Portfolio />
+
         <Certificates />
         <CTASection openmodal={() => setModalForm(!modalForm)} />
-        <Portfolio />
         <Services />
         <Footer />
         <Copyright />
