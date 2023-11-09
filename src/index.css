@@ -21,7 +21,7 @@ input {
   @apply flex;
 }
 .backtext {
-  @apply text-sky-500 text-5xl md:text-[5rem] absolute top-0 left-[50%] translate-x-[-50%]  font-bold -skew-x-12;
+  @apply text-sky-600 dark:text-sky-400 text-5xl md:text-[5rem] absolute top-0 left-[50%] translate-x-[-50%]  font-bold -skew-x-12;
 }
 
 .service-card {
@@ -65,16 +65,16 @@ input {
 }
 
 #cta-section {
-  @apply py-40 relative z-20 my-20;
+  @apply py-40 relative z-20 my-20 overflow-hidden;
 }
 #cta-section::after {
   content: "";
   top: 0;
-  left: 0;
-  inset: 0;
-  transform: skewY(3deg);
+  left: -50%;
+  border-radius: 50%;
+  width: 200%;
   position: absolute;
-  @apply bg-sky-50 w-full h-full -z-10 drop-shadow-md;
+  @apply bg-sky-50 h-full -z-10 drop-shadow-md border-2 border-sky-500;
 }
 @-ms-keyframes spin {
   from {
