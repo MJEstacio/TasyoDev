@@ -5,15 +5,8 @@ import ReactBeginner from "../assets/ReactBeginner.jpg";
 import JSbeginner from "../assets/JSbeginner.jpg";
 import IntroHTML from "../assets/IntroHTML.png";
 import { Reveal } from "./Reveal";
-
+import webDevSololearn from "../assets/webDevelopmentSololearn.jpg";
 const certs = [
-  {
-    imageUrl: webDev,
-    title: "Web Development MasterClass",
-    link: "https://youaccel.com/admin/certificate_gen/tcpdf/ya/certificate_ya2.php?certid=70196677",
-    issuedBy: "YouAccel",
-    dateIssued: "November 2022",
-  },
   {
     imageUrl: IntroHTML,
     title: "Introduction to HTML",
@@ -21,6 +14,21 @@ const certs = [
     issuedBy: "Sololearn",
     dateIssued: "March 2023",
   },
+  {
+    imageUrl: webDevSololearn,
+    title: "Web Development",
+    link: "https://www.sololearn.com/certificates/CC-GQWTER6J",
+    issuedBy: "Sololearn",
+    dateIssued: "November 2023",
+  },
+  {
+    imageUrl: webDev,
+    title: "Web Development MasterClass",
+    link: "https://youaccel.com/admin/certificate_gen/tcpdf/ya/certificate_ya2.php?certid=70196677",
+    issuedBy: "YouAccel",
+    dateIssued: "November 2022",
+  },
+
   {
     imageUrl: BootstrapReact,
     title: "Complete Bootstrap and React Bootcamp",
