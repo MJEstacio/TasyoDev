@@ -4,7 +4,7 @@ import BootstrapReact from "../assets/BootstrapReact.jpg";
 import ReactBeginner from "../assets/ReactBeginner.jpg";
 import JSbeginner from "../assets/JSbeginner.jpg";
 import IntroHTML from "../assets/IntroHTML.png";
-import webDevSololearn from "../assets/webDevelopmentSololearn.jpg";
+// import webDevSololearn from "../assets/webDevelopmentSololearn.jpg";
 import { Reveal } from "./Reveal";
 
 const certs = [
@@ -15,13 +15,13 @@ const certs = [
     issuedBy: "Sololearn",
     dateIssued: "March 2023",
   },
-  {
-    imageUrl: webDevSololearn,
-    title: "Web Development",
-    link: "https://www.sololearn.com/certificates/CC-GQWTER6J",
-    issuedBy: "Sololearn",
-    dateIssued: "November 2023",
-  },
+  // {
+  //   imageUrl: webDevSololearn,
+  //   title: "Web Development",
+  //   link: "https://www.sololearn.com/certificates/CC-GQWTER6J",
+  //   issuedBy: "Sololearn",
+  //   dateIssued: "November 2023",
+  // },
   {
     imageUrl: webDev,
     title: "Web Development MasterClass",
