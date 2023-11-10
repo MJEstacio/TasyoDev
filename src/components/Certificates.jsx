@@ -69,7 +69,7 @@ const Certificates = () => {
       <div className="max-w-7xl mx-auto pt-40">
         <h1 className="backtext">Certificates</h1>
 
-        <Reveal className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        <Reveal className="grid marker: grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {certs.map((cert) => (
             <div
               key={cert.title}
