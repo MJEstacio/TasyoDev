@@ -4,7 +4,7 @@ import BootstrapReact from "../assets/BootstrapReact.jpg";
 import ReactBeginner from "../assets/ReactBeginner.jpg";
 import JSbeginner from "../assets/JSbeginner.jpg";
 import IntroHTML from "../assets/IntroHTML.png";
-import webDevSololearn from "../assets/webDevelopmentSololearn.jpg";
+import webDevSolo from "../assets/webDevSolo.jpg";
 import { Reveal } from "./Reveal";
 
 const certs = [
@@ -16,7 +16,7 @@ const certs = [
     dateIssued: "March 2023",
   },
   {
-    imageUrl: webDevSololearn,
+    imageUrl: webDevSolo,
     title: "Web Development",
     link: "https://www.sololearn.com/certificates/CC-GQWTER6J",
     issuedBy: "Sololearn",
