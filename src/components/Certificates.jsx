@@ -4,8 +4,9 @@ import BootstrapReact from "../assets/BootstrapReact.jpg";
 import ReactBeginner from "../assets/ReactBeginner.jpg";
 import JSbeginner from "../assets/JSbeginner.jpg";
 import IntroHTML from "../assets/IntroHTML.png";
-import { Reveal } from "./Reveal";
 import webDevSololearn from "../assets/webDevelopmentSololearn.jpg";
+import { Reveal } from "./Reveal";
+
 const certs = [
   {
     imageUrl: IntroHTML,
