@@ -2,8 +2,7 @@ import webDev from "./assets/WebDevMaster.jpg";
 import FEBootcamp from "./assets/FEBootcamp.jpg";
 import BootstrapReact from "./assets/BootstrapReact.jpg";
 import ReactBeginner from "./assets/ReactBeginner.jpg";
-import JSbeginner from "./assets/JSbeginner.jpg";
-import IntroHTML from "./assets/IntroHTML.png";
+
 import webDevSolo from "./assets/webDevSolo.jpg";
 
 // Portfolio
@@ -20,13 +19,7 @@ import tairi from "./assets/tairihome.png";
 
 
 export const certs = [
-  {
-    imageUrl: IntroHTML,
-    title: "Introduction to HTML",
-    link: "https://www.sololearn.com/certificates/CC-3VDVPDNU",
-    issuedBy: "Sololearn",
-    dateIssued: "March 2023",
-  },
+
   {
     imageUrl: webDevSolo,
     title: "Web Development",
@@ -64,13 +57,7 @@ export const certs = [
     issuedBy: "Meta Brains",
     dateIssued: "March 2023",
   },
-  {
-    imageUrl: JSbeginner,
-    title: "JS for Beginners",
-    link: "https://www.udemy.com/certificate/UC-961237f4-4330-4d07-ab02-027f68412e1a/",
-    issuedBy: "YouAccel",
-    dateIssued: "October 2022",
-  },
+
 ];
 
 
