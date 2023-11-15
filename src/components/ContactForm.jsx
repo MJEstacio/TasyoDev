@@ -1,19 +1,28 @@
-import React, { useRef } from "react";
-import emailjs from "@emailjs/browser";
-
+import React from "react";
+// messenger imports
+import {
+  FaFacebookMessenger,
+  FaViber,
+  FaTelegram,
+  FaWhatsappSquare,
+} from "react-icons/fa";
 import { AiOutlineClose } from "react-icons/ai";
-import { FaFacebookMessenger, FaViber, FaTelegram, FaWhatsappSquare } from "react-icons/fa";
+
 const ContactForm = ({ openmodal }) => {
   const messenger = [
     {
       app: "Facebook",
       link: "https://m.me/shempot1601",
-      icon: <FaFacebookMessenger className="w-10 h-10 text-sky-400 mx-auto mb-2" />,
+      icon: (
+        <FaFacebookMessenger className="w-10 h-10 text-sky-400 mx-auto mb-2" />
+      ),
     },
     {
       app: "WhatsApp",
       link: "https://wa.me/+639653458348",
-      icon: <FaWhatsappSquare className="w-10 h-10 text-green-500 mx-auto mb-2" />,
+      icon: (
+        <FaWhatsappSquare className="w-10 h-10 text-green-500 mx-auto mb-2" />
+      ),
     },
     {
       app: "Telegram",

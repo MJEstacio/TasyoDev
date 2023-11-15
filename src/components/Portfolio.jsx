@@ -1,102 +1,10 @@
 import React from "react";
-import katie from "../assets/katie2.jpg";
-import onetrace from "../assets/onetrace4.jpg";
-import smdc from "../assets/refersmdc4.jpg";
-import meats from "../assets/meats4.jpg";
-import norms from "../assets/norms.jpg";
-import concep from "../assets/concepstore3.jpg";
-import dragonfly from "../assets/dragonfly1.jpg";
-import firmtech from "../assets/thefirmtech1.jpg";
-import clickhost from "../assets/clickhost.jpg";
-import tairi from "../assets/tairihome.png";
+import { portfolios } from "../data";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Reveal } from "./Reveal";
 
-import { animateContainer, item } from "./Animation";
+import { animateContainer } from "./Animation";
 const Portfolio = () => {
-  const portfolios = [
-    {
-      id: 1,
-      title: "Tairi.co",
-      image: tairi,
-      link: "https://tairi.co/",
-
-      description:
-        "Supercharge your startup’s tech within just 30 days! At Tairi, we’re all about people. We believe the best way we can help others is through meaningful work.  ",
-      programs: ["NextJs", "TypeScript", "CSS", "Tailwind CSS"],
-    },
-    {
-      id: 2,
-      title: "Clickhost Australia",
-      image: clickhost,
-      link: "https://clickhost.com.au/",
-
-      description:
-        "Fast hosting with a team of experts you can trust. With an average response time of under 10 minutes, it's easy to see why Aussie Businesses love Clickhost.",
-      programs: ["Svelte", "JavaScript", "CSS", "Tailwind CSS", "RestAPI"],
-    },
-
-    {
-      id: 3,
-      title: "Refers @ SMDC",
-      image: smdc,
-      link: "https://refer.smdc.com/",
-
-      description:
-        "Whether you are a fresh graduate, working that 9 to 5, or a stay-at-home mom (or dad) who wants to earn more income to fund your dreams – this is for you!",
-      programs: ["HTML", "CSS", "mySQL", "jQuery", "WordPress"],
-    },
-    {
-      id: 4,
-      title: "Circle M Meats",
-      image: meats,
-      link: "https://circlemmeats.wpengine.com/",
-
-      description:
-        "Circle M Meats’ top priority is providing delivery of premium-quality beef, pork and chicken to socially conscious buyers.  We are a completely vertically integrated meat company, from our unique feeding program all the way through to the thought and care we put into our aging program. ",
-      programs: ["HTML", "CSS", "mySQL", "jQuery", "ColdFusion"],
-    },
-    {
-      id: 5,
-      title: "Norms Farms",
-      image: norms,
-      link: "https://normsfarms.com/",
-
-      description:
-        "At Norm’s Farms, we’re dedicated to creating the best elderberry products on the market. Every supplement we sell is 3rd-party tested for quality and authenticity.",
-    },
-    {
-      id: 6,
-      title: "Concepstore",
-      image: concep,
-      link: "https://concepstore.com/",
-
-      description:
-        "Concepstore helps you design and refine your home by addressing your household’s most pressing concerns as they arrive. We do this by not only giving you a wealth of options to choose from, but by also helping you decide which household appliances would best suit your home. ",
-      programs: ["HTML", "CSS", "Liquid", "Shopify"],
-    },
-    {
-      id: 7,
-      title: "Dragonfly Saas",
-      image: dragonfly,
-      link: "https://mjestacio-dragonflysaas.netlify.app/",
-
-      description:
-        "Dragonfly SaaS is a simple and cloud based retention and user insight system for your business. It comes with a complete dashboard, putting you in control so you can increase your COA, retention and figure out the abusers from the high value with a few simple clicks.",
-      programs: ["HTML", "CSS", "SCSS", "JavaScript"],
-    },
-    {
-      id: 8,
-      title: "The Firm Tech",
-      image: firmtech,
-      link: "https://thefirmtech.one/",
-
-      description:
-        "Transforming your vision into reality with The Firm tech. Our cohesive team of exceptionally skilled individuals collaborates to deliver innovative ideas and cutting-edge technology solutions to companies and brands. ",
-      programs: ["HTML", "CSS", "SCSS", "JavaScript"],
-    },
-  ];
-
   return (
     <section
       className=" relative  max-w-[1440px]  lg:mx-auto my-20  portfolio dark:text-black overflow-hidden  "
