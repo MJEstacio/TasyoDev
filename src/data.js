@@ -2,11 +2,10 @@ import webDev from "./assets/WebDevMaster.jpg";
 import FEBootcamp from "./assets/FEBootcamp.jpg";
 import BootstrapReact from "./assets/BootstrapReact.jpg";
 import ReactBeginner from "./assets/ReactBeginner.jpg";
-
+import IntroHTML from "./assets/IntroHTML.png";
 import webDevSolo from "./assets/webDevSolo.jpg";
 
 // Portfolio
-
 import smdc from "./assets/refersmdc4.jpg";
 import meats from "./assets/meats4.jpg";
 import norms from "./assets/norms.jpg";
@@ -57,7 +56,13 @@ export const certs = [
     issuedBy: "Meta Brains",
     dateIssued: "March 2023",
   },
-
+  {
+    imageUrl: IntroHTML,
+    title: "Introduction to HTML",
+    link: "https://www.sololearn.com/certificates/CC-3VDVPDNU",
+    issuedBy: "Sololearn",
+    dateIssued: "March 2023",
+  },
 ];
 
 
