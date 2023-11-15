@@ -1,5 +1,8 @@
 import React from "react";
 
+import { Reveal } from "./Reveal";
+import { animateContainer, item } from "./Animation";
+import { motion } from "framer-motion";
 import { FaHtml5, FaSass } from "react-icons/fa";
 import {
   SiCss3,
@@ -11,9 +14,6 @@ import {
   SiSvelte,
 } from "react-icons/si";
 import { IoLogoNodejs } from "react-icons/io";
-import { Reveal } from "./Reveal";
-import { animateContainer, item } from "./Animation";
-import { motion } from "framer-motion";
 
 const techStack = [
   {

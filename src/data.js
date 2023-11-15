@@ -16,6 +16,8 @@ import clickhost from "./assets/clickhost.jpg";
 import tairi from "./assets/tairihome.png";
 //
 
+// Tech
+
 
 export const certs = [
 

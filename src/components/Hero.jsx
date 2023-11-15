@@ -19,7 +19,7 @@ const Hero = () => {
         <motion.h1
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 1 }}
           className="text-3xl md:text-5xl font-semibold text-sky-500 mb-5"
         >
           Mark Joseph Estacio
@@ -49,13 +49,8 @@ const Hero = () => {
           <motion.div
             initial={{ x: -100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: 360 }}
-            whileTap={{
-              scale: 0.8,
-              rotate: -360,
-              borderRadius: "100%",
-            }}
-            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 1 }}
           >
             <a
               href="https://www.facebook.com/shempot1601 "
@@ -68,15 +63,10 @@ const Hero = () => {
             </a>
           </motion.div>
           <motion.div
-            initial={{ x: -100, y: 100, opacity: 0 }}
-            animate={{ x: 0, y: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: -360 }}
-            whileTap={{
-              scale: 0.8,
-              rotate: -360,
-              borderRadius: "100%",
-            }}
-            transition={{ duration: 0.5 }}
+            initial={{ y: 100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 1 }}
           >
             <a
               href="https://www.linkedin.com/in/markjosephestacio/"
@@ -90,15 +80,10 @@ const Hero = () => {
             </a>
           </motion.div>
           <motion.div
-            initial={{ x: 100, y: 100, opacity: 0 }}
-            animate={{ x: 0, y: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: 360 }}
-            whileTap={{
-              scale: 0.8,
-              rotate: -360,
-              borderRadius: "100%",
-            }}
-            transition={{ duration: 0.5 }}
+            initial={{ y: -100, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 1.5 }}
           >
             <a
               href="https://github.com/MJEstacio"
@@ -113,13 +98,8 @@ const Hero = () => {
           <motion.div
             initial={{ x: 100, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
-            whileHover={{ scale: 1.2, rotate: -360 }}
-            whileTap={{
-              scale: 0.8,
-              rotate: -360,
-              borderRadius: "100%",
-            }}
-            transition={{ duration: 0.5 }}
+            whileHover={{ scale: 1.2 }}
+            transition={{ duration: 1 }}
           >
             <a href="mailto:mjestacioiii@gmail.com">
               <AiOutlineMail
