@@ -3,7 +3,7 @@ import React from "react";
 import { Reveal } from "./Reveal";
 import { animateContainer, item } from "./Animation";
 import { motion } from "framer-motion";
-import { FaHtml5, FaSass } from "react-icons/fa";
+import { FaHtml5, FaSass, FaPhp } from "react-icons/fa";
 import {
   SiCss3,
   SiJavascript,
@@ -103,6 +103,15 @@ const techStack = [
       <IoLogoNodejs
         size={30}
         className="text-green-600"
+      />
+    ),
+  },
+  {
+    stack: "php",
+    icon: (
+      <FaPhp
+        size={30}
+        className="text-blue-600"
       />
     ),
   },
