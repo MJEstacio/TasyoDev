@@ -2,8 +2,8 @@ import React from "react";
 import { portfolios } from "../data";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Reveal } from "./Reveal";
-
 import { animateContainer } from "./Animation";
+
 const Portfolio = () => {
   return (
     <section
@@ -15,7 +15,7 @@ const Portfolio = () => {
       <div
         className={`grid grid-cols-1 gap-0 md:gap-8  pt-28 px-2 md:px-5 2xl:px-3 ${animateContainer}  `}
       >
-        {portfolios.map(({ id, title, image, link, description }) => (
+        {portfolios.map(({ id, title, image, link, description, programs }) => (
           <Reveal
             y={100}
             className={`mt-5 rounded-xl portfolio-card my-20 md:mx-0 duration-500 flex flex-col lg:flex-row  gap-2 lg:gap-20  `}
@@ -47,7 +47,16 @@ const Portfolio = () => {
               <p className="mt-3  text-gray-600 dark:text-gray-300 leading-7 text-sm lg:text-base mb-10">
                 {description}
               </p>
-
+              {/* <ul className="flex gap-5 mb-10">
+                {programs.map((item, i) => (
+                  <li
+                    key={i}
+                    className="rounded-md  duration-500 font-semibold   text-sky-400 italic "
+                  >
+                    {item}
+                  </li>
+                ))}
+              </ul> */}
               <div>
                 <a
                   href={link}

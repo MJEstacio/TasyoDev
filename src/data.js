@@ -119,6 +119,7 @@ export const portfolios = [
 
     description:
       "At Norm’s Farms, we’re dedicated to creating the best elderberry products on the market. Every supplement we sell is 3rd-party tested for quality and authenticity.",
+    programs: ["HTML", "CSS", "Liquid", "Shopify"],
   },
   {
     id: 6,
