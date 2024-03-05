@@ -14,6 +14,7 @@ import dragonfly from "./assets/dragonfly1.jpg";
 import firmtech from "./assets/thefirmtech1.jpg";
 import clickhost from "./assets/clickhost.jpg";
 import tairi from "./assets/tairihome.png";
+import headlights from './assets/headlightsforever.png';
 //
 
 // Tech
@@ -70,8 +71,8 @@ export const certs = [
 
 // Portfolio 
 export const portfolios = [
+
   {
-    id: 1,
     title: "Tairi.co",
     image: tairi,
     link: "https://tairi.co/",
@@ -81,18 +82,24 @@ export const portfolios = [
     programs: ["NextJs", "TypeScript", "CSS", "Tailwind CSS"],
   },
   {
-    id: 2,
     title: "Clickhost Australia",
     image: clickhost,
     link: "https://clickhost.com.au/",
-
     description:
       "Fast hosting with a team of experts you can trust. With an average response time of under 10 minutes, it's easy to see why Aussie Businesses love Clickhost.",
     programs: ["Svelte", "JavaScript", "CSS", "Tailwind CSS", "RestAPI"],
   },
-
   {
-    id: 3,
+    title: "Headlights Forever",
+    image: headlights,
+    link: "https://mjestacio.github.io/headlights2/",
+
+    description:
+      "Headlights Forever is professional car headlight restoration in Central London. Our expert team is dedicated to restoring the clarity and appearance of your headlights, ensuring optimal visibility and safety on the roads. Using premium quality chemicals is the fastest and the most efficient method to get your headlights looking like brand new for ages. ",
+    programs: ["HTML", "CSS", "Tailwind CSS", "JavaScript"],
+  },
+  {
+
     title: "Refers @ SMDC",
     image: smdc,
     link: "https://refer.smdc.com/",
@@ -102,7 +109,7 @@ export const portfolios = [
     programs: ["HTML", "CSS", "mySQL", "jQuery", "WordPress"],
   },
   {
-    id: 4,
+
     title: "Circle M Meats",
     image: meats,
     link: "https://circlemmeats.wpengine.com/",
@@ -112,7 +119,7 @@ export const portfolios = [
     programs: ["HTML", "CSS", "mySQL", "jQuery", "ColdFusion"],
   },
   {
-    id: 5,
+
     title: "Norms Farms",
     image: norms,
     link: "https://normsfarms.com/",
@@ -122,7 +129,7 @@ export const portfolios = [
     programs: ["HTML", "CSS", "Liquid", "Shopify"],
   },
   {
-    id: 6,
+
     title: "Concepstore",
     image: concep,
     link: "https://concepstore.com/",
@@ -132,7 +139,7 @@ export const portfolios = [
     programs: ["HTML", "CSS", "Liquid", "Shopify"],
   },
   {
-    id: 7,
+
     title: "Dragonfly Saas",
     image: dragonfly,
     link: "https://mjestacio-dragonflysaas.netlify.app/",
@@ -142,7 +149,7 @@ export const portfolios = [
     programs: ["HTML", "CSS", "SCSS", "JavaScript"],
   },
   {
-    id: 8,
+
     title: "The Firm Tech",
     image: firmtech,
     link: "https://thefirmtech.one/",
@@ -151,4 +158,5 @@ export const portfolios = [
       "Transforming your vision into reality with The Firm tech. Our cohesive team of exceptionally skilled individuals collaborates to deliver innovative ideas and cutting-edge technology solutions to companies and brands. ",
     programs: ["HTML", "CSS", "SCSS", "JavaScript"],
   },
+
 ];
