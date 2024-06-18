@@ -129,14 +129,14 @@ const Tech = () => {
           <h2 className="text-xl md:text-4xl text-white font-bold text-center">
             Tech Stack Tools and Frameworks
           </h2>
-          <div className="w-1/2 h-1 rounded-xl   bg-slate-200 absolute left-0 translate-x-1/2 translate-y-5"></div>
+          <div className="w-1/2 h-1 rounded-xl bg-slate-200 absolute left-0 translate-x-1/2 translate-y-5"></div>
         </div>
         <div className=" max-w-[1440px] mx-auto justify-center ">
-          <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4  px-2 py-10  gap-5 text">
+          <motion.div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5  px-2 py-10  gap-5 text">
             {techStack.map((techs) => {
               return (
                 <motion.div
-                  className={`flex flex-col items-center p-5 border border-2 rounded-md text-slate-800 dark:bg-white ${item} shadow-md`}
+                  className={`flex flex-col items-center p-5 border border-2 rounded-md text-slate-800 bg-white ${item} shadow-md`}
                   key={techs.stack}
                   variants={item}
                 >

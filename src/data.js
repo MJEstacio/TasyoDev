@@ -15,6 +15,7 @@ import firmtech from "./assets/thefirmtech1.jpg";
 import clickhost from "./assets/clickhost.jpg";
 import tairi from "./assets/tairihome.png";
 import headlights from './assets/headlightsforever.png';
+import virtualcrew from './assets/virtualcrew.png';
 //
 
 // Tech
@@ -72,6 +73,15 @@ export const certs = [
 // Portfolio 
 export const portfolios = [
 
+  {
+    title: "VirtualCrew.Net",
+    image: virtualcrew,
+    link: "https://virtualcrew.net/",
+
+    description:
+      "At VirtualCrew.net, we understand that time is your most precious asset. That's why we're here to empower you to focus on what truly matters. Whether you're a budding entrepreneur with a groundbreaking vision or a seasoned professional looking to streamline your daily operations, we've got you covered!",
+    programs: ["NextJs", "TypeScript", "CSS", "Tailwind CSS"],
+  },
   {
     title: "Tairi.co",
     image: tairi,
