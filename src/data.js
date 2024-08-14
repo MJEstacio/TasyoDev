@@ -16,6 +16,7 @@ import clickhost from "./assets/clickhost.jpg";
 import tairi from "./assets/tairihome.png";
 import headlights from './assets/headlightsforever.png';
 import virtualcrew from './assets/virtualcrew.png';
+import digital from './assets/62digital.png';
 //
 
 // Tech
@@ -73,6 +74,15 @@ export const certs = [
 // Portfolio 
 export const portfolios = [
 
+  {
+    title: "62 Digital",
+    image: digital,
+    link: "https://62.digital/",
+
+    description:
+      "At 62 Digital, we tailor marketing and PR campaigns to your unique needs, blending data-driven insights with creative excellence for measurable results.",
+    programs: ["Webflow"],
+  },
   {
     title: "VirtualCrew.Net",
     image: virtualcrew,
