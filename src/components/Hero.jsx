@@ -50,8 +50,8 @@ const Hero = () => {
             seeking digital transformation, I bring expertise and creativity to
             drive your vision forward.{" "}
             <p className="mt-5 text-sm font-semibold">
-              "From concept to launch, I make your innovation not just
-              functional—but unforgettable."
+              From concept to launch, I make your innovation not just
+              functional—but unforgettable.
             </p>
           </motion.p>
         </div>
