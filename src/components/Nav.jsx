@@ -68,7 +68,7 @@ const Nav = ({ handleclick, openmodal, darkMode }) => {
               className="hidden lg:flex font-semibold hover:text-sky-500 duration-300 cursor-pointer"
               onClick={openmodal}
             >
-              Let's Talk
+              Contact Me
             </button>
           </li>
           <li className="relative overflow-hidden">
@@ -128,7 +128,7 @@ const Nav = ({ handleclick, openmodal, darkMode }) => {
                 className="duration-200 hover:text-slate-500 cursor-pointer"
                 onClick={openmodal}
               >
-                Let's Talk
+                Contact Me
               </a>
             </li>
           </ul>
