@@ -48,7 +48,7 @@ const Hero = () => {
             while prioritizing clean, maintainable architecture. Whether you're
             a startup looking to disrupt the market or an established business
             seeking digital transformation, I bring expertise and creativity to
-            drive your vision forward.{" "}
+            drive your vision forward.
             <p className="mt-5 text-sm font-semibold">
               From concept to launch, I make your innovation not just
               functional—but unforgettable.
