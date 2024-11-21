@@ -51,7 +51,7 @@ const Hero = () => {
             drive your vision forward.
             <p className="mt-5 text-sm font-semibold">
               From concept to launch, I make your innovation not just
-              functional—but unforgettable...
+              functional—but unforgettable.
             </p>
           </motion.p>
         </div>
